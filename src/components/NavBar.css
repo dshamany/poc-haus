@@ -13,29 +13,57 @@
 
 .nav {
     position: fixed;
-    top: 10px;
+    top: 0px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 100vw;
+    width: 99vw;
     height: 40px;
-    background-color: transparent;
-    z-index: 99;
+    background-image: linear-gradient(180deg, #ffffffbb 90%, transparent);
+    z-index: -10;
+    padding: 10px;
+    font-weight: 300;
 }
+
+.nav div {
+    margin: 10px;
+    line-height: 0.75;
+}
+
+.nav div:last-child .nav-item{
+    padding: 10px;
+    background-color: #B53CBA;
+    color: #fff;
+    border: 1px solid #B53CBA;
+    border-radius: 7px;
+    font-weight: bolder;
+    border: 2px solid #fff;
+}
+
+.nav div:last-child .nav-item:hover{
+    color: #000;
+    font-weight: bolder;
+
+}
+
 
 .nav-item {
     text-decoration: none;
     text-transform: capitalize;
     color: #000;
-    padding: 10px 15px;
     font-family: "open sans";
     font-weight: 100;
     font-size: 18px;
     outline: none;
+    z-index: 100;
 }
 
 .nav-item:hover {
     color: #B53CBA;
+}
+
+#logo {
+    z-index: 100;
+    left: 10px;
 }
 
 @media (max-width: 900px){
@@ -45,6 +73,7 @@
     }
 
     #logo {
+        z-index: 100;
         left: 20px;
     }
 
@@ -56,7 +85,7 @@
     
     .line-light {
         margin: 5px 10px;
-        border-bottom: 3px solid #fff;
+        border-bottom: 3px solid #B53CBA;
         visibility: visible;
     }
 
@@ -67,13 +96,15 @@
         left: 0px;
         margin: 0 auto;
         font-size: 28px;
-        background-color: #B53CBA;
+        background-color: #fff;
+        background-image: none;
         padding-top: 75px;
         text-align: left;
         height: 100vh;
         width: 100vw;
-        max-width: 230px;
+        max-width: 265px;
         transition: 0.7s;
+        z-index: -1;
     }
     .open {
         left: 0px;
@@ -85,15 +116,20 @@
         opacity: 0;
         transition: 0.7s;
     }
+
+    .nav div {
+        margin: 30px auto;
+    }
+
     .nav-item {
-        color: white;
+        color: #000;
         font-size: 24px;
         display: flex;
         margin-left: 10px;
     }
 
     .nav-item:hover {
-        color: #000;
+        color: #B53CBA;
     }
 
     .nav-btn {

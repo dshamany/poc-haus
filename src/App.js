@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
@@ -13,9 +13,23 @@ import ProfilePage from './components/ProfilePage';
 import About from './components/LandingAbout';
 
 function App() {
+
+	const [navItems] = useState([
+		'home', 
+		'browse', 
+		'deals', 
+		'businesses', 
+		'favorites', 
+		'about', 
+		'signin'
+	])
+
 	return (
 		<div className="App">
-			<NavBar navItems={['home', 'browse', 'deals', 'businesses', 'favorites', 'about', 'account']} />
+			{
+				console.log(localStorage.getItem('token'))
+			}
+			<NavBar navItems={navItems} />
 			<Switch>
 				<Route exact path="/" component={LandingPage} />
 				<Route exact path="/browse" component={Browse} />

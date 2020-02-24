@@ -10,7 +10,7 @@ export default {
             key: "about",
         },
         signin: {
-            title: "Sign In | Sign Up",
+            title: "Sign In",
             path: "/signin",
             key: "signin"
         },
@@ -18,6 +18,11 @@ export default {
             title: "Sign Up",
             path: "/signup",
             key: "signup"
+        },
+        signout: {
+            title: "Sign Out",
+            path: "/signout",
+            key: "signout"
         },
         browse: {
             title: "Browse",

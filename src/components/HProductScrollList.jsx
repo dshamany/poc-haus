@@ -1,18 +1,23 @@
-import React from 'react'
-import Product from './Product'
+import React from 'react';
+import Product from './Product';
+
+import '../components/HScrollView.css';
 
 export default function HProductScrollList(props) {
     return (
-        <div className='HScrollView' style={{ display: 'flex', width: '100%', overflowX: 'scroll'}}>
-            {
-                props.listItems.map((item, idx) => {
-                    return (
-                        <div className="card" style={{ width: 100, height: 250, margin: '50px 75px' }}>
-                            <Product product={item} key={idx} />
-                        </div>
-                    )
-                })
-            }
+        <div className='hscroll-container'>
+            <h1>Deals</h1>
+            <div className='HScrollView'>
+                {
+                    props.listItems.map((item, idx) => {
+                        return (
+                            <div className="card">
+                                <Product product={item} key={idx} />
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
