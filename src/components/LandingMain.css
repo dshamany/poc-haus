@@ -1,32 +1,19 @@
 .nav-arrow {
     width: 40px;
-    position: absolute;
-    bottom: 10px;
+    height: 40px;
+    position: relative;
+    bottom: 75px;
+    outline: none;
   }
-
-  #landing, #about, #deals {
-    height: 100vh;
-    width: 100vw;
-    align-content: center;
-}
 
 #landing  {
     background-image: url('../images/Landing_Img1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     overflow: hidden;
-    margin: 0px;
-    height: 100vh;
-}
-
-#inner-container {
-    height: 100vh;
-    width: 100vw;
-    max-width: 50%;
-    align-items: center;
-    margin: 0 auto;
+    margin: 0px auto;
+    align-content: center;
 }
 
 #landing p {

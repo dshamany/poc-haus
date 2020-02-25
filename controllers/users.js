@@ -5,6 +5,8 @@ const SECRET = process.env.SECRET;
 
 module.exports = {
     sign,
+    signin,
+    signup,
     getOne,
 }
 

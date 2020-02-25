@@ -1,18 +1,7 @@
-.biz-card {
-    max-width: 23vw;
-    align-items: center;
-    margin: 0 auto;
-}
-
 .business-image {
     width: 200px;
     height: 200px;
     border-radius: 7px;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-h3 {
-    width: 200px;
-    margin: 10px auto;
 }

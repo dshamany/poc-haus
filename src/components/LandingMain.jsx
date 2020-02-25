@@ -1,18 +1,17 @@
 import React from "react";
+import { HashLink as HLink } from 'react-router-hash-link';
 import "./LandingMain.css";
 import img from "../images/down-arrow.png"
 
-export default function LandingMain(props){
+export default function LandingMain(props) {
     return (
-        <div>
-        <div id="landing">
-            <div className="inner-container">
-            <p>Explore, Shop, and Support POC-owned businesses in LA</p>
+        <div style={{marginBottom: -45}}>
+            <div id="landing">
+                <div>
+                    <p>Explore, Shop, and Support POC-owned businesses in LA</p>
+                </div>
             </div>
-            <div className="arrow">
-            <a href="#about" ><img src={img} alt="dow arrow"  className="nav-arrow"/></a>
-            </div>
-        </div>
+            <HLink className="arrow" to="#about"><img className="nav-arrow" src={img} /></HLink>
         </div>
     )
 }

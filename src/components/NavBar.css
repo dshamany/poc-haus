@@ -40,7 +40,7 @@
 }
 
 .nav div:last-child .nav-item:hover{
-    color: #000;
+    background-color: #930A97;
     font-weight: bolder;
 
 }

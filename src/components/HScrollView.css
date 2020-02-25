@@ -1,7 +1,7 @@
 .hscroll-container {
     width: 100%;
     height: 400px;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .HScrollView { 
@@ -12,12 +12,13 @@
 }
 
 .card {
-    width: 100px;
-    height: 200px;
+    width: 60px;
+    height: 100%;
     margin-right: 150px;
 }
 
 .hscroll-container h1 {
+    padding-left: 20px;
     float: left;
     line-height: 0.5;
 }

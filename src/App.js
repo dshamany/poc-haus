@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import LandingPage from './components/LandingPage';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import SignOut from './components/SignOut';
 import Browse from './components/Browse';
 import Deals from './components/Deals';
 import Businesses from './components/Businesses';
@@ -20,15 +21,12 @@ function App() {
 		'deals', 
 		'businesses', 
 		'favorites', 
-		'about', 
-		'signin'
+		'about'
 	])
+
 
 	return (
 		<div className="App">
-			{
-				console.log(localStorage.getItem('token'))
-			}
 			<NavBar navItems={navItems} />
 			<Switch>
 				<Route exact path="/" component={LandingPage} />
@@ -40,6 +38,7 @@ function App() {
 				<Route exact path="/account" component={LandingPage} />
 				<Route exact path="/signin" component={SignIn} />
         		<Route exact path="/signup" component={SignUp} />
+        		<Route exact path="/signout" component={SignOut} />
         		<Route exact path="/business" component={ProfilePage} />
 			</Switch>
 		</div>

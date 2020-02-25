@@ -6,6 +6,12 @@ import Logo from '../components/Logo';
 
 export default function NavBar(props) {
 
+    if (localStorage.getItem('token')){
+        props.navItems[props.navItems.length-1] = 'signout'
+    } else {
+        props.navItems[props.navItems.length-1] = 'signin'
+    }
+
     function toggleMenu(){
         let nav = document.querySelector('.nav');
         let isClosed = nav.getAttribute('class') === 'nav closed';

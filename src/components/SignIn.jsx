@@ -10,6 +10,7 @@ export default function SignIn(props) {
 
     async function submitForm() {
         const payload = {
+            fullname: '',
             email,
             password
         }
